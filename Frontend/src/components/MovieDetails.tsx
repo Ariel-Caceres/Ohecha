@@ -3,6 +3,7 @@ import { apiUrl } from "../enviroment"
 import { useEffect, useState } from "react"
 import type { UUID } from "../types/uuid";
 import { Navbar } from "./Navbar";
+import { Footer } from "./Footer";
 
 
 export interface MovieInterface {
@@ -143,6 +144,8 @@ export const MovieDetails = () => {
                             <div className="gap-10">
                                 <span className="border-b border-red-500">Overview</span>
                                 <p>{movie.description}</p>
+                                <p>A species of parasitic aliens descends on Earth and quickly infiltrates humanity by entering the brains of vulnerable targets; insatiable beings that gain total control of their host and are capable of transforming themselves to feed on unsuspecting prey. High school student Shinichi Izumi falls victim to one of these parasites, but the creature fails to take over his brain and ends up in his right hand.
+                                </p>
                             </div>
 
                         </div>
@@ -173,7 +176,7 @@ export const MovieDetails = () => {
                 </div>
 
             </div>
-
+            <Footer />
         </>
 
     )
