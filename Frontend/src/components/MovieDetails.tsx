@@ -168,8 +168,8 @@ export const MovieDetails = () => {
                         </div>
 
                         {mostrarTrailer &&
-                            <div className="py-6 flex justify-center">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/xpBhJdTvN3E?si=cx8ui-mJgaxji0Rl" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                            <div className="py-6 flex justify-center h-[1000px]">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xpBhJdTvN3E?si=cx8ui-mJgaxji0Rl" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                             </div>
                         }
                     </div>
