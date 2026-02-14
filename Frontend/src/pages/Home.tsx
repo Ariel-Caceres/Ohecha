@@ -1,3 +1,4 @@
+import { BottomNavBar } from "../components/BottomNavBar";
 import { Button } from "../components/Button";
 import { Navbar } from "../components/Navbar";
 import { ScrollBar } from "../components/Scrollbar";
@@ -10,6 +11,8 @@ export default function Home() {
             <ScrollBar />
             <Button />
             <ScrollCategories />
+            <BottomNavBar />
+
         </>
     );
 }
