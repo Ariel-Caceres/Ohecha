@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import type { UUID } from "../types/uuid";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
+import { BottomNavBar } from "./BottomNavBar";
 
 
 export interface MovieInterface {
@@ -38,6 +39,7 @@ export const MovieDetails = () => {
     // const location = useLocation()
     const [movie, setMovie] = useState<MovieInterface>()
     const [mostrarTrailer, setMostrarTrailer] = useState<boolean>(false)
+
     useEffect(() => {
         const getMovieById = async () => {
             try {
@@ -101,7 +103,7 @@ export const MovieDetails = () => {
                                             devolverItems(<span key={i}>{g.genre.name}</span>)
                                         ))}
                                     </div>
-                                    <div className="px-5 py-3 bg-red-500 w-1/6 rounded-2xl flex justify-center mt-10">
+                                    <div className="px-5 py-3 bg-red-500 sm:w-1/3 md:w-1/3 xl:w-1/5 w-full rounded-2xl flex justify-center mt-10">
                                         <button>Play Now</button>
                                     </div>
                                 </div>
